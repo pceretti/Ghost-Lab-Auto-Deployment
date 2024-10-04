@@ -1,0 +1,11 @@
+[default]
+ghost ansible_host=10.2.10.100 dict_key=ghost
+
+
+[all:vars]
+dns_server=10.2.10.254
+two_adapters=no
+nat_adapter=Ethernet
+domain_adapter=Ethernet
+ansible_user=localuser
+ansible_password=password
