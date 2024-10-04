@@ -1,5 +1,8 @@
 ---
 - name: Install podman
-  ansible.builtin.dnf:
-    name: podman
-    state: present
+  hosts: ghost
+  tasks:
+    - name: install podman
+      ansible.builtin.dnf:
+        name: podman
+        state: present
